@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import Navbar from "../Components/Navbar";
+import { Link } from "react-router-dom";
 import roomImg from "../assets/hom1.jpg"; // Adjust the path as necessary
 import Clients from "../Components/Clients";
 import Alsaif from "../Components/Alsaif";
 import HomeProjects from "../Components/HomeProjects";
 import Highlight from "../Components/Highlight";
+import Footer from "../Components/Footer";
 
 
 // /assets/interior3.jpg
@@ -30,10 +32,17 @@ const Home = () => {
               and amaze everyone, especially your nuclear family. Make every
               moment of your home equipment a valuable item.
             </p>
-            <button className="mt-8 px-6 py-3 bg-black text-white rounded-full flex items-center gap-2 hover:bg-gray-800 transition">
-              EXPLORE NOW
-              <span className="text-2xl">↗</span>
-            </button>
+          
+
+            <Link to="/contact">
+  <button className="relative overflow-hidden px-4 py-2 mt-5 rounded-md text-sm tracking-widest flex items-center gap-2 group border">
+    <span className="relative z-10 text-black group-hover:text-white transition-colors duration-300">EXPLORE NOW</span>
+    <span className="text-2xl relative z-10 text-black group-hover:text-white transition-colors duration-300">↗</span>
+
+    {/* Animated background */}
+    <span className="absolute inset-0 bg-black scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 ease-out z-0"></span>
+  </button>
+</Link>
           </div>
 
           {/* Right Image */}
@@ -54,6 +63,7 @@ const Home = () => {
       <Alsaif />
       <HomeProjects />
       <Highlight />
+      <Footer />
     </>
   );
 };
