@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@media (min-width: 768px) {
+    .clip-bottom-left-triangle {
+      clip-path: polygon(113px 100%, 18% calc(100% - 40px), 0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+  }
