@@ -26,7 +26,7 @@ const HomeProjects = () => {
             <img
               src={project.image}
               alt={project.title}
-              className="absolute inset-0 h-[650px] w-full object-contain opacity-0 group-hover:opacity-100 transition-opacity mt-10"
+              className="absolute inset-0 h-[500px] w-[550px] object-auto opacity-0 group-hover:opacity-100 transition-opacity "
             />
   
             <div className="absolute inset-0 flex items-start justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 ">

@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { portfolio,portfolioDetail } from '../data/clientsData'
-import homeCard from '../assets/homecard5.webp';
+import homeCard from '../assets/homcard6.jpg';
 import Footer from '../Components/Footer'
 const Portfolio = () => {
   return (
     <>
       <Navbar />
-      <section className="px-6 py-12 md-py-4 bg-white">
+      <section className="px-6 py-12 md-py-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
             <div className='md:w-1/2'>
             <h1 className="text-xl md:text-2xl md:text-start font-mono  mt-4 px-2 md:px-1 text-gray-600">
@@ -81,30 +81,38 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-      <section className="text-center font-mono">
-      <h3 className="text-sm uppercase text-gray-400 mb-2">How it Works</h3>
-      <h2 className="text-3xl md:text-4xl font-bold mb-6">How We Bring Your Vision to Life</h2>
-      <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+      <section className=" font-mono bg-gray-50">
+      <h3 className="text-sm uppercase text-gray-400 mb-2 text-center">How it Works</h3>
+      <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">How We Bring Your Vision to Life</h2>
+      <p className="text-gray-600 max-w-2xl mx-auto mb-12 text-center">
         A simple, seamless process to create stunning architectural and interior designs.
       </p>
       <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {portfolioDetail.map((step, index) => (
-          <div key={index} className="bg-white p-6  shadow-inner">
+          <div key={index} className="bg-white p-6  shadow-inner hover:shadow-lg hover:scale-105  duration-300 ">
             <p className="text-sm text-gray-500 mb-2">Step {index + 1}</p>
             <h3 className="text-xl font-semibold mb-2 text-left">{step.title}</h3>
             <p className="text-gray-600 text-left">{step.description}</p>
           </div>
         ))}
       </div>
-      <div className="mt-16 max- mx-auto">
+     
+
+      <div className="mt-16 max- mx-auto relative">
+       
         <img
           src={homeCard}
           alt="Interior Design Showcase"
           className=" w-full object-cover"
         />
+        
+        <h1 className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-xs md:text-5xl font-mono bg-black/10  px-4 py-2 rounded">
+    Shape Your Space <br />  with <span className='font-mono'>Al Saif</span>
+  </h1>
       </div>
-    </section>
+     
     <Footer />
+    </section>
     </>
   )
 }

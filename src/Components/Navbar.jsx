@@ -50,10 +50,10 @@ const handleClick = () => {
 </Link>
         </div>
         </div>
-        <ul className="space-y-6 text-lg hidden md:flex md:space-x-8 md:space-y-0 justify-center items-center font-mono">
+        <ul className="space-y-6 text-lg hidden md:flex md:space-x-8 md:space-y-0 justify-center items-center font-thin">
             <li><Link to="/" onClick={() => setMenuOpen(false)}>HOME</Link></li>
             <li><Link to="/portfolio" onClick={() => setMenuOpen(false)}>PORTFOLIO</Link></li>
-            <li><Link to="/services" onClick={() => setMenuOpen(false)}>SERVICES</Link></li>
+            {/* <li><Link to="/services" onClick={() => setMenuOpen(false)}>SERVICES</Link></li> */}
             <li><Link to="/about" onClick={() => setMenuOpen(false)}>ABOUT</Link></li>
             
           </ul>
@@ -77,7 +77,7 @@ const handleClick = () => {
           <ul className="space-y-6 text-xl">
           <li><Link to="/" onClick={() => setMenuOpen(false)}>HOME</Link></li>
             <li><Link to="/portfolio" onClick={() => setMenuOpen(false)}>PORTFOLIO</Link></li>
-            <li><Link to="/services" onClick={() => setMenuOpen(false)}>SERVICES</Link></li>
+            {/* <li><Link to="/services" onClick={() => setMenuOpen(false)}>SERVICES</Link></li> */}
             <li><Link to="/about" onClick={() => setMenuOpen(false)}>ABOUT</Link></li>
             <li><Link to="/contact" onClick={() => setMenuOpen(false)}>CONTACT</Link></li>
           </ul>

@@ -8,6 +8,7 @@ import HomeProjects from "../Components/HomeProjects";
 import Highlight from "../Components/Highlight";
 import Footer from "../Components/Footer";
 import excellence from "../assets/excelence.jpg"
+import Services from "../Components/Services";
 
 // /assets/interior3.jpg
 const Home = () => {
@@ -65,6 +66,7 @@ const Home = () => {
       <Alsaif />
       <HomeProjects />
       <Highlight />
+      <Services />
       <Footer />
     </>
   );

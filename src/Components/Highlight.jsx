@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "../assets/proj1.jpg";
-import img2 from "../assets/proj2.webp";
+import img2 from "../assets/homecard5.webp";
 const Highlight = () => {
   return (
     <>
@@ -27,7 +27,7 @@ const Highlight = () => {
     </div>
     <div className="flex flex-col md:flex-row gap-3 py-6 px-6">
         <div>
-<img src={img1} alt="" className="md:w-[450px] h-full object-cover" />
+<img src={img1} alt="" className="md:w-[450px] md:h-[410px] object-cover" />
 </div>
         <div>
 <img src={img2} alt="" className="md:w-[950px] object-cover" />
