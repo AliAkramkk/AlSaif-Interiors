@@ -5,6 +5,11 @@ import { FaLinkedinIn,FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+const handleClick = () => {
+  const phoneNumber = '971588742991';
+  const url = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+  window.open(url, "_blank");
+};
 
   return (
     <>
@@ -24,9 +29,9 @@ const Navbar = () => {
         <div className="hidden md:flex gap-4 text-xl">
           <a href="#" className="hover:text-gray-500"><FiInstagram /></a>
           <a href="#" className="hover:text-gray-500"><FaLinkedinIn /></a>
-          <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer">
-                      <FaWhatsapp className="hover:text-black transition-all" />
-                    </a>
+          <a onClick={handleClick} className="cursor-pointer">
+  <FaWhatsapp className="hover:text-black transition-all animate-bounce" />
+</a>
         </div>
 
         {/* Center - Logo */}
@@ -46,7 +51,8 @@ const Navbar = () => {
         </div>
         </div>
         <ul className="space-y-6 text-lg hidden md:flex md:space-x-8 md:space-y-0 justify-center items-center font-mono">
-            <li><Link to="/projects" onClick={() => setMenuOpen(false)}>PROJECTS</Link></li>
+            <li><Link to="/" onClick={() => setMenuOpen(false)}>HOME</Link></li>
+            <li><Link to="/portfolio" onClick={() => setMenuOpen(false)}>PORTFOLIO</Link></li>
             <li><Link to="/services" onClick={() => setMenuOpen(false)}>SERVICES</Link></li>
             <li><Link to="/about" onClick={() => setMenuOpen(false)}>ABOUT</Link></li>
             
@@ -69,7 +75,8 @@ const Navbar = () => {
             A L &nbsp; S A I F &nbsp; I N T E R I O R S
           </div>
           <ul className="space-y-6 text-xl">
-            <li><Link to="/projects" onClick={() => setMenuOpen(false)}>PROJECTS</Link></li>
+          <li><Link to="/" onClick={() => setMenuOpen(false)}>HOME</Link></li>
+            <li><Link to="/portfolio" onClick={() => setMenuOpen(false)}>PORTFOLIO</Link></li>
             <li><Link to="/services" onClick={() => setMenuOpen(false)}>SERVICES</Link></li>
             <li><Link to="/about" onClick={() => setMenuOpen(false)}>ABOUT</Link></li>
             <li><Link to="/contact" onClick={() => setMenuOpen(false)}>CONTACT</Link></li>

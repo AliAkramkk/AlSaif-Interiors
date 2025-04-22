@@ -3,6 +3,13 @@ import { FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+
+  const handleClick = () => {
+    const phoneNumber = '971588742991';
+    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+    window.open(url, "_blank");
+  };
+
   return (
     <footer className="bg-gray-100 px-6 py-10 mt-16">
       {/* Top Section */}
@@ -37,7 +44,7 @@ const Footer = () => {
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
             <FaLinkedinIn className="hover:text-black transition-all" />
           </a>
-          <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer">
+                <a onClick={handleClick} className="cursor-pointer animate-bounce">
             <FaWhatsapp className="hover:text-black transition-all" />
           </a>
         </div>

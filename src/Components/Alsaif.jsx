@@ -11,13 +11,13 @@ const Alsaif = () => {
         <img
           src={img}
           alt="Alsaif"
-          className="mask-radial-[100%_100%] mask-radial-from-75% mask-radial-at-left ..."
+          className="md:w-[650px] md:h-[450px] mask-radial-[100%_110%] mask-radial-from-75% mask-radial-at-left ..."
         />
         {/* <img
         className="mask-radial-[100%_100%] mask-radial-from-75% mask-radial-at-left ..." src={"img"} /> */}
         <div class="font-mono">
           
-          <p class="mt-2 text-3xl text-gray-700 dark:text-gray-300 animate-bounce">
+          <p class="mt-2 text-3xl text-gray-700 dark:text-gray-300  ">
             17 Years of Excellence
           </p>
           <p className="mt-1 text-sm leading-relaxed text-balance text-gray-500 max-h-[200px] overflow-hidden md:max-h-none">
