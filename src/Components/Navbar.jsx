@@ -1,10 +1,28 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FiInstagram, FiPlus, FiX } from "react-icons/fi";
 import { FaLinkedinIn,FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const isActive = (path) =>
+    location.pathname === path
+      ? `border-b-2 ${isScrolled ? 'border-gray-700 text-black' : 'border-gray-700 text-black'}`
+      : '';
+
+  const textColor = isScrolled ? 'text-black' : 'text-black';
+ 
 const handleClick = () => {
   const phoneNumber = '971588742991';
   const url = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
@@ -51,10 +69,10 @@ const handleClick = () => {
         </div>
         </div>
         <ul className="space-y-6 text-lg hidden md:flex md:space-x-8 md:space-y-0 justify-center items-center font-thin">
-            <li><Link to="/" onClick={() => setMenuOpen(false)}>HOME</Link></li>
-            <li><Link to="/portfolio" onClick={() => setMenuOpen(false)}>PORTFOLIO</Link></li>
+            <li className={` text-lg hover:scale-110 transition-all ease-in-out ${isActive('/')}`}><Link to="/" onClick={() => setMenuOpen(false)}>HOME</Link></li>
+            <li className={` text-lg hover:scale-110 transition-all ease-in-out ${isActive('/portfolio')}`}><Link to="/portfolio" onClick={() => setMenuOpen(false)}>PORTFOLIO</Link></li>
             {/* <li><Link to="/services" onClick={() => setMenuOpen(false)}>SERVICES</Link></li> */}
-            <li><Link to="/about" onClick={() => setMenuOpen(false)}>ABOUT</Link></li>
+            <li className={` text-lg hover:scale-110 transition-all ease-in-out ${isActive('/about')}`}><Link to="/about" onClick={() => setMenuOpen(false)}>ABOUT</Link></li>
             
           </ul>
 

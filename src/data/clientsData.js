@@ -1,13 +1,32 @@
-import logo1 from "../assets/client1.jpeg";
-import logo2 from "../assets/client2.jpeg";
-import logo3 from "../assets/client3.jpeg";
-import logo4 from "../assets/client4.jpeg";
-import logo5 from "../assets/client5.jpeg";
-import logo6 from "../assets/client6.jpeg";
-import logo7 from "../assets/client7.jpeg";
-import logo8 from "../assets/client8.jpeg";
-import logo9 from "../assets/client9.jpeg";
-import logo10 from "../assets/client10.jpeg";
+import logo1 from "../assets/client1.png";
+import logo2 from "../assets/client2.png";
+import logo3 from "../assets/client3.png";
+import logo4 from "../assets/client4.png";
+import logo5 from "../assets/client5.png";
+import logo6 from "../assets/client6.png";
+import logo7 from "../assets/client7.jpg";
+import logo8 from "../assets/client8.jpg";
+import logo9 from "../assets/client9.jpg";
+import logo10 from "../assets/client10.jpg";
+import logo11 from "../assets/client11.jpg";
+import logo12 from "../assets/client12.jpg";
+import logo13 from "../assets/client13.jpg";
+import logo14 from "../assets/client14.jpg";
+import logo15 from "../assets/client15.jpg";
+import logo16 from "../assets/client16.jpg";
+import logo17 from "../assets/client17.jpg";
+import logo18 from "../assets/client18.jpg";
+import logo19 from "../assets/client19.jpg";
+import logo20 from "../assets/client20.jpg";  
+import logo21 from "../assets/client21.jpg";
+import logo22 from "../assets/client22.jpg";
+import logo23 from "../assets/client23.jpg";
+import logo24 from "../assets/client24.jpg";
+import logo25 from "../assets/client25.jpg";
+import logo26 from "../assets/client26.jpg";
+import logo27 from "../assets/client27.jpg";
+import logo28 from "../assets/client28.jpg";
+import logo29 from "../assets/client31.png"    
 
 
 // images for projects
@@ -76,6 +95,101 @@ const clients = [
       id: 10,
       name: 'Client Ten',
       logo: logo10,
+    },
+    {
+      id: 11,
+      name: 'Client Ten',
+      logo: logo11,
+    },
+    {
+      id: 12,
+      name: 'Client Twelve',
+      logo: logo12,
+    },
+    {
+      id: 13,
+      name: 'Client Thirteen',
+      logo: logo13,
+    },
+    {
+      id: 14,
+      name: 'Client Fourteen',
+      logo: logo14,
+    },
+    {
+      id: 15,
+      name: 'Client Fifteen',
+      logo: logo15,
+    },
+    {
+      id: 16,
+      name: 'Client Sixteen',
+      logo: logo16,
+    },
+    {
+      id: 17,
+      name: 'Client Seventeen',
+      logo: logo17,
+    },
+    {
+      id: 18,
+      name: 'Client Eighteen',
+      logo: logo18,
+    },
+    {
+      id: 19,
+      name: 'Client Nineteen',
+      logo: logo19,
+    },
+    {
+        id: 20,
+        name: 'Client Twenty',
+        logo: logo20,
+    },
+    {
+        id: 21,
+        name: 'Client Twenty One',
+        logo: logo21,
+    },
+    {
+        id: 22,
+        name: 'Client Twenty Two',
+        logo: logo22,
+    },
+    {
+        id: 23,
+        name: 'Client Twenty Three',
+        logo: logo23,
+    },
+    {
+        id: 24,
+        name: 'Client Twenty Four',
+        logo: logo24,
+    },
+    {
+        id: 25,
+        name: 'Client Twenty Five',
+        logo: logo25,
+    },
+    {
+        id: 26,
+        name: 'Client Twenty Six',
+        logo: logo26,
+    },
+    {
+        id: 27,
+        name: 'Client Twenty Seven',
+        logo: logo27,
+    },
+    {
+        id: 28,
+        name: 'Client Twenty Eight',
+        logo: logo28,
+    },
+    {
+        id: 29,
+        name: 'Client Twenty Nine',
+        logo: logo29,
     },
   ];
   

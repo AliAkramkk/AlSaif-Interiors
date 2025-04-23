@@ -37,7 +37,7 @@ const Clients = () => {
                 key={index}
                 src={client.logo}
                 alt={client.name}
-                className="h-16 md:h-20 w-auto object-contain grayscale hover:grayscale-0 transition duration-300 bg-transparent"
+                className="h-16 md:h-20 w-auto object-contain  hover:grayscale-0 transition duration-300 bg-transparent"
               />
             ))}
           </div>
