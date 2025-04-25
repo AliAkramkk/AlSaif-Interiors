@@ -60,7 +60,7 @@ const Home = () => {
               // style={{
               //   clipPath: "polygon(113px 100%, 18% calc(100% - 40px), 0% 0%, 100% 0%, 100% 100%, 0% 100%)"
               // }}
-              className="md:w-[850px] md:h-[650px] object-contain md:object-cover md:-mt-22 md:ml-20 clip-bottom-left-triangle"
+              className="md:w-[850px] md:h-[650px] object-contain md:object-cover md:-mt-22 md:ml-20  clip-bottom-left-triangle lg:clip-none "
             />
           </div>
         </div>

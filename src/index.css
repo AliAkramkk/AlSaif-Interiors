@@ -2,6 +2,16 @@
 
 @media (min-width: 768px) {
     .clip-bottom-left-triangle {
-      clip-path: polygon(113px 100%, 18% calc(100% - 40px), 0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      clip-path: polygon(123px 100%, 20% calc(100% - 40px), 0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      
+    }
+    .clip-bottom-right-triangle {
+      clip-path: polygon(0% 0%, 100% calc(100% - 40px), calc(100% - 123px) 100%, 0% 100%, 0% 0%, 100% 0%);
+    }
+    .clip-top-left-triangle {
+      clip-path: polygon(100px 100%, 0% calc(100% - 40px), 0% 20%, 110% 0%, 100% 100%, 0% 100%);
+    }
+    .clip-none {
+      clip-path: none;
     }
   }

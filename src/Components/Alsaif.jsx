@@ -11,7 +11,7 @@ const Alsaif = () => {
         <img
           src={img}
           alt="Alsaif"
-          className="md:w-[650px] md:h-[450px] mask-radial-[100%_110%] mask-radial-from-75% mask-radial-at-left ..."
+          className="md:w-[650px] md:h-[450px] mask-radial-[100%_110%] mask-radial-from-75% mask-radial-at-left ... "
         />
         {/* <img
         className="mask-radial-[100%_100%] mask-radial-from-75% mask-radial-at-left ..." src={"img"} /> */}
