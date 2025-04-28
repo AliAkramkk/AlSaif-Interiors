@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className=" min-h-screen flex items-center justify-center px-4 md:px-20 py-16 md:-mt-16">
+      <div className=" min-h-screen flex items-center justify-center px-4 md:px-20 py-16 md:mt-16">
         <div className="grid md:grid-cols-2 items-center gap-10 ">
           {/* Left Content */}
           <div>

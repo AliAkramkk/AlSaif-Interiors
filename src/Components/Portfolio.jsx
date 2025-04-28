@@ -3,11 +3,12 @@ import Navbar from './Navbar'
 import { portfolio,portfolioDetail } from '../data/clientsData'
 import homeCard from '../assets/homcard6.jpg';
 import Footer from '../Components/Footer'
+import logo from "../assets/logo.png"
 const Portfolio = () => {
   return (
     <>
       <Navbar />
-      <section className="px-6 py-12 md-py-4 bg-gray-50">
+      <section className="px-6 py-12 md-py-4 md:mt-26 bg-gray-50 ">
         <div className="max-w-7xl mx-auto">
             <div className='md:w-1/2'>
             <h1 className="text-xl md:text-2xl md:text-start font-mono  mt-4 px-2 md:px-1 text-gray-600">
@@ -87,15 +88,21 @@ const Portfolio = () => {
       <p className="text-gray-600 max-w-2xl mx-auto mb-12 text-center">
         A simple, seamless process to create stunning architectural and interior designs.
       </p>
-      <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-        {portfolioDetail.map((step, index) => (
-          <div key={index} className="bg-white p-6  shadow-inner hover:shadow-lg hover:scale-105  duration-300 ">
-            <p className="text-sm text-gray-500 mb-2">Step {index + 1}</p>
-            <h3 className="text-xl font-semibold mb-2 text-left">{step.title}</h3>
-            <p className="text-gray-600 text-left">{step.description}</p>
-          </div>
-        ))}
-      </div>
+      <div 
+  className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto "
+  
+>
+  {portfolioDetail.map((step, index) => (
+    <div key={index} className="bg- p-6 shadow-inner hover:shadow-lg hover:scale-105 duration-300 bg-no-repeat bg-center  bg-contain  "style={{  backgroundImage: `url(${logo})`, 
+    backgroundColor: 'rgba(255,255,255,0.9)', // optional light background
+    backgroundBlendMode: 'overlay', }}>
+      <p className="text-sm text-gray-800 mb-2">Step {index + 1}</p>
+      <h3 className="text-xl font-semibold mb-2 text-left">{step.title}</h3>
+      <p className="text-gray-9500 text-left ">{step.description}</p>
+    </div>
+  ))}
+</div>
+
      
 
       <div className="mt-16 max- mx-auto relative">

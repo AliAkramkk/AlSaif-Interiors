@@ -4,13 +4,14 @@ import ClientsLogo from './ClientsLogo'
 import Footer from './Footer'
 import BadgeImage from '../assets/excelence.jpg'
 import Services from './Services'
+import CountProjects from './CountProjects'
 
 const About = () => {
   return (
     <>
       <Navbar />
 
-      <section className="relative bg-white overflow-hidden">
+      <section className="relative bg-white overflow-hidden mt-20">
         {/* Top Wave */}
         <div className="absolute top-0 left-0 w-full">
           <svg viewBox="0 0 1440 320" className="w-full h-auto rotate-360">
@@ -69,7 +70,7 @@ const About = () => {
        
       <ClientsLogo />
       <Services />
-
+<CountProjects />
       {/* <div className="absolute bottom-0 left-0 w-full md:mt-64">
           <svg viewBox="0 0 1440 320" className="w-full h-auto">
             <path fill="#F9FAFB" fillOpacity="1" d="M0,96L48,85.3C96,75,192,53,288,64C384,75,480,117,576,128C672,139,768,117,864,106.7C960,96,1056,96,1152,90.7C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>

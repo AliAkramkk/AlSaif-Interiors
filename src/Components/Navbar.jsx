@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FiInstagram, FiPlus, FiX } from "react-icons/fi";
 import { FaLinkedinIn,FaWhatsapp } from "react-icons/fa";
-
+import logo from "../assets/logo.png"
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,19 +32,22 @@ const handleClick = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="sticky w-full px-6 py-4  items-center justify-between border-b  z-20 bg-white md:mt-10">
+      <nav className={`fixed -top-10 w-full z-50 bg-white transition-all duration-300 mt-10 ${isScrolled ? 'shadow-md' : ''}`}>
         {/* Left - Socials */}
         <div className=" md:flex-none max-sm:flex justify-between items-center ">
         <div className="text-lg md:text-3xl tracking-widest font-thin text-left md:text-center ">
+          <div className="flex gap-2 items-center justify-center">
+          <img className="rounded-full w-[50px]" src={logo} alt="" />
+
           A L &nbsp; S A I F &nbsp; I N T E R I O R S
-          
+          </div>
         </div>
         <div className="md:hidden text-2xl " onClick={() => setMenuOpen(true)}>
           <FiPlus />
         </div>
         </div>
         <div className="hidden md:flex justify-between">
-        <div className="hidden md:flex gap-4 text-xl">
+        <div className="hidden md:flex gap-4 text-xl ">
           <a href="#" className="hover:text-gray-500"><FiInstagram /></a>
           <a href="#" className="hover:text-gray-500"><FaLinkedinIn /></a>
           <a onClick={handleClick} className="cursor-pointer">
@@ -68,7 +71,7 @@ const handleClick = () => {
 </Link>
         </div>
         </div>
-        <ul className="space-y-6 text-lg hidden md:flex md:space-x-8 md:space-y-0 justify-center items-center font-thin">
+        <ul className="space-y-6 text-lg hidden md:flex md:space-x-8 md:space-y-0 justify-center items-center font-thin md:-mt-4">
             <li className={` text-lg hover:scale-110 transition-all ease-in-out ${isActive('/')}`}><Link to="/" onClick={() => setMenuOpen(false)}>HOME</Link></li>
             <li className={` text-lg hover:scale-110 transition-all ease-in-out ${isActive('/portfolio')}`}><Link to="/portfolio" onClick={() => setMenuOpen(false)}>PORTFOLIO</Link></li>
             {/* <li><Link to="/services" onClick={() => setMenuOpen(false)}>SERVICES</Link></li> */}

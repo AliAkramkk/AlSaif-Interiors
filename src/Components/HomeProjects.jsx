@@ -31,7 +31,7 @@ const HomeProjects = () => {
   
             <div className="absolute inset-0 flex items-start justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 ">
               <div className="bg-white p-6  shadow-lg text- max-w-[80%] max-h-[50%]">
-                <h4 className="text-sm text-gray-500 uppercase">Setup</h4>
+                <h4 className="text-sm text-gray-500 uppercase">Setup </h4>
                 <h2 className="text-lg font-semibold">{project.title}</h2>
                 <p className="text-sm text-gray-600 mt-2">{project.subtitle}</p>
                 <button
